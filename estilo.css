@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+/* MENU */
+
+/*se crea un encabezado o una barra fija*/
+.contenedorHeader{
+    background: #101010 ;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+/* estilizamos el encabezado de la pagina */
+.contenedorHeader header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* estilizacion del logotipo, aplicandole color, tamaño de fuente, y subrayacion de texto */
+.contenedorHeader header .logo a{
+    font-family: 'Righteous';    
+    font-size: 36px;
+    color: rgb(230, 9, 57); 
+    text-decoration: none;
+}
+
+/* estilar las listar no ordenadas, para utiilizar flexbox y distribuir los elementos hijos */
+.contenedorHeader header ul{
+    display: flex;
+    list-style: none;
+}
+
+/* estilisar la lista de enlaces, con color, margen, relleno interno, y transicion de color */
+.contenedorHeader header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition:  .5s;
+    text-decoration: none;
+}
+
+/* con esto cada que me pare en el listado o en los links se van a pintar de color morado al estar sobre ellos */
+.contenedorHeader header nav ul li a:hover{
+    color: rgb(230, 9, 57); 
+}
+
+.navResponsive{
+    background-color:rgb(230, 9, 57); 
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/*  SECCIO INICIO */
+ .incio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(img/fondo3.jpeg);
+    background-size: cover;
+    height: 100vh;
+    color:#fff;
+    display: flex;
+    align-items: center;
+ }
+ 
+ /* Nuevo estilo para ajustar el tamaño de la imagen */
+.imagenCV {
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+  
+}
+
+.incio .contenidoBanner{
+    padding: 20px;
+    background-color: #101010;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.incio .contenidoBanner img{
+    margin-top: 40px;
+    border: 10px solid  rgb(230, 9, 57); 
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.incio .contenidoBanner h1{
+    margin-top: 5px;
+    font-size: 30px;
+    font-family: 'Righteous';
+}
+
+.incio .contenidoBanner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.incio .contenidoBanner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.incio .contenidoBanner .redes a:hover{
+    background-color: rgb(230, 9, 57); 
+}
