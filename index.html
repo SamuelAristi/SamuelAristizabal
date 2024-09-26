@@ -15,17 +15,15 @@
         <div class="logo">
             <a href="#"> Samuel Aristizabal </a>
         </div>
-        <nav id="vac">
+        <nav id="nav" >
             <ul>
-                <li><a href="#inicio"> INCIO </a></li>
-                <li><a href="#sobreMi"> SOBRE MI </a></li>
-                <li><a href="#skills"> SKILLS </a></li>
-                <li><a href="#education"> EDUCACIÓN </a></li>
-                <li><a href="#projects"> PROJECTOS </a></li>
-                <li><a href="#contacto"> CONTACTO </a></li>
+                <li><a href="#inicio" onclick="seleccionar()"> INICIO </a></li>
+                <li><a href="#sobreMi" onclick="seleccionar()"> SOBRE MI </a></li>
+                <li><a href="#skills" onclick="seleccionar()"> SKILLS </a></li>
+                <li><a href="#curriculum" onclick="seleccionar()"> CURRICULUM </a></li>
             </ul>
         </nav>
-        <div class="navResponsive">
+        <div class="navResponsive" onclick="mostrarOcultarMenu()">
             <i><i class="fa-sharp fa-solid fa-bars"></i></i>
         </div>
     </header>
@@ -40,11 +38,12 @@
         <h1> Samuel Aristizabal</h1>
         <h2>Estudiante Ingenieria en sistemas y Telecomunicaciones</h2>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/samuel-aristizabal-botero-618065268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/SamuelAristi" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://wa.me/573112045457"target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/aristi0622?igsh=N3R4OTZ2bTcwMXF4&utm_source=qr"target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/samuel.aristizabal.545?mibextid=LQQJ4d"target="_blank"><i class="fa-brands fa-facebook-f"></i></i></a>
+            
         </div>
     </div>
 </section>
@@ -131,7 +130,7 @@
                 <div class="skill">
                     <span> Java</span>
                     <div class="barraSkill">
-                        <div class="progreso">
+                        <div class="progreso java">
                             <span>60%</span>
                         </div>
                     </div>
@@ -140,7 +139,7 @@
                 <div class="skill">
                     <span> Unreal Engine</span>
                     <div class="barraSkill">
-                        <div class="progreso">
+                        <div class="progreso unrealengine">
                             <span>55%</span>
                         </div>
                     </div>
@@ -149,7 +148,7 @@
                 <div class="skill">
                     <span> Unity</span>
                     <div class="barraSkill">
-                        <div class="progreso">
+                        <div class="progreso unity">
                             <span>60%</span>
                         </div>
                     </div>
@@ -158,7 +157,7 @@
                 <div class="skill">
                     <span> HTML & CSS </span>
                     <div class="barraSkill">
-                        <div class="progreso">
+                        <div class="progreso htmlcss">
                             <span>30%</span>
                         </div>
                     </div>
@@ -167,7 +166,7 @@
                 <div class="skill">
                     <span> Git Hub  </span>
                     <div class="barraSkill">
-                        <div class="progreso">
+                        <div class="progreso github">
                             <span>50%</span>
                         </div>
                     </div>
@@ -182,7 +181,7 @@
                 <div class="skill">
                     <span> Comunicacion</span>
                     <div class="barraSkill">
-                        <div class="progreso">
+                        <div class="progreso comunicacion">
                             <span>80%</span>
                         </div>
                     </div>
@@ -191,7 +190,7 @@
                 <div class="skill">
                     <span> Trabajo en equipo</span>
                     <div class="barraSkill">
-                        <div class="progreso">
+                        <div class="progreso tequipo">
                             <span>80%</span>
                         </div>
                     </div>
@@ -200,7 +199,7 @@
                 <div class="skill">
                     <span> Ingles</span>
                     <div class="barraSkill">
-                        <div class="progreso">
+                        <div class="progreso ingles">
                             <span>65%</span>
                         </div>
                     </div>
@@ -209,7 +208,7 @@
                 <div class="skill">
                     <span> Adaptabilidad</span>
                     <div class="barraSkill">
-                        <div class="progreso">
+                        <div class="progreso adaptabilidad">
                             <span>75%</span>
                         </div>
                     </div>
@@ -218,7 +217,7 @@
                 <div class="skill">
                     <span> Liderazgo</span>
                     <div class="barraSkill">
-                        <div class="progreso">
+                        <div class="progreso liderazgo">
                             <span>80%</span>
                         </div>
                     </div>
@@ -226,6 +225,121 @@
         </div>
     </div>
  </section>
+
+ <!--  SECCION DE CURRICULUM-->
+<!--  SECCION DE CURRICULUM-->
+<section id="curriculum" class="curriculum">
+    <div class="contenidoSeccion"> 
+        <h2>curriculum</h2>
+        <div class="fila">
+            <div class="col izquierda"> 
+                <h3>Educacion</h3>
+                
+                <div class="item izq">
+                    <h4>Arte y multimedia</h4>
+                    <span class="casa">Universidad de Manizales</span>
+                    <span class="fecha">Inicio 2022</span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum asperiores quas odio dolor officiis, 
+                        minus similique culpa est, soluta consectetur temporibus pariatur consequatur quisquam voluptate, 
+                        quis dolore cupiditate vitae repellendus.
+                    </p>
+                    <div class="conectorizq">
+                        <div class="circuloizq"></div>
+                    </div>
+                </div>
+
+                <div class="item izq">
+                    <h4>Arte y multimedia</h4>
+                    <span class="casa">Universidad de Manizales</span>
+                    <span class="fecha">Inicio 2022</span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum asperiores quas odio dolor officiis, 
+                        minus similique culpa est, soluta consectetur temporibus pariatur consequatur quisquam voluptate, 
+                        quis dolore cupiditate vitae repellendus.
+                    </p>
+                    <div class="conectorizq">
+                        <div class="circuloizq"></div>
+                    </div>
+                </div>
+                
+                <div class="item izq">
+                    <h4>Arte y multimedia</h4>
+                    <span class="casa">Universidad de Manizales</span>
+                    <span class="fecha">Inicio 2022</span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum asperiores quas odio dolor officiis, 
+                        minus similique culpa est, soluta consectetur temporibus pariatur consequatur quisquam voluptate, 
+                        quis dolore cupiditate vitae repellendus.
+                    </p>
+                    <div class="conectorizq">
+                        <div class="circuloizq"></div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col derecha"> 
+                <h3>Experiencia</h3>
+                
+                <div class="item der">
+                    <h4>Arte y multimedia</h4>
+                    <span class="casa">Universidad de Manizales</span>
+                    <span class="fecha">Inicio 2022</span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum asperiores quas odio dolor officiis, 
+                        minus similique culpa est, soluta consectetur temporibus pariatur consequatur quisquam voluptate, 
+                        quis dolore cupiditate vitae repellendus.
+                    </p>
+                    <div class="conectorder">
+                        <div class="circuloder"></div>
+                    </div>
+                </div>
+
+                <div class="item der">
+                    <h4>Arte y multimedia</h4>
+                    <span class="casa">Universidad de Manizales</span>
+                    <span class="fecha">Inicio 2022</span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum asperiores quas odio dolor officiis, 
+                        minus similique culpa est, soluta consectetur temporibus pariatur consequatur quisquam voluptate, 
+                        quis dolore cupiditate vitae repellendus.
+                    </p>
+                    <div class="conectorder">
+                        <div class="circuloder"></div>
+                    </div>
+                </div>
+                
+                <div class="item der">
+                    <h4>Arte y multimedia</h4>
+                    <span class="casa">Universidad de Manizales</span>
+                    <span class="fecha">Inicio 2022</span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum asperiores quas odio dolor officiis, 
+                        minus similique culpa est, soluta consectetur temporibus pariatur consequatur quisquam voluptate, 
+                        quis dolore cupiditate vitae repellendus.
+                    </p>
+                    <div class="conectorder">
+                        <div class="circuloder"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="https://www.linkedin.com/in/samuel-aristizabal-botero-618065268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/SamuelAristi" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://wa.me/573112045457"target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/aristi0622?igsh=N3R4OTZ2bTcwMXF4&utm_source=qr"target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/samuel.aristizabal.545?mibextid=LQQJ4d"target="_blank"><i class="fa-brands fa-facebook-f"></i></i></a>
+        
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+
 
 </body>
 </html>
