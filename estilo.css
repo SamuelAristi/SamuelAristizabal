@@ -140,7 +140,7 @@ html{
 .sobreMi{
     background-color: #101010;
     color:#fff;
-    padding: 50px 100px;
+    padding: 50px 20px;
 }
 
 .sobreMi .contenidoSeccion{
@@ -542,42 +542,67 @@ footer .arriba{
 }
 /*SECCION RESPONSIVE*/
 
-@media screen and (max-width:700px) {
-    nav{
-        display: none;
+/* SECCION RESPONSIVE */
+
+/* Para pantallas de 700px o menos */
+@media screen and (max-width: 700px) {
+    nav {
+        display: none; /* Ocultar el menú de navegación principal */
     }
-    .navResponsive{
-        display: block;
+
+    .navResponsive {
+        display: block; /* Mostrar el menú responsive */
     }
-    nav.responsive{
-        display: block;
+
+    nav.responsive {
+        display: block; /* Mostrar el menú desplegable */
         position: absolute;
         right: 0;
         top: 75px;
         background-color: #363535;
         width: 180px;
     }
-    nav.responsive ul{
-        display: block !important;
+
+    nav.responsive ul {
+        display: block !important; /* Mostrar el menú como lista */
     }
-    nav.responsive ul li{
-        border-bottom: 1px solid #fff;
-        padding: 10px 0;
+
+    nav.responsive ul li {
+        border-bottom: 1px solid #fff; /* Línea divisoria entre elementos */
+        padding: 10px 0; /* Espaciado entre elementos */
     }
-}
-@media screen and (max-width: 700px) {
+
     /* Ajustes para la sección sobreMi */
+    .sobreMi .contenidoSeccion {
+        padding: 20px; /* Reducir el padding alrededor del contenido */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrar el contenido */
+    }
+
     .sobreMi .fila {
         display: block; /* Cambiar a bloque para apilar columnas */
     }
+
     .sobreMi .fila .col {
         width: 100%; /* Ocupa el 100% del ancho */
         margin-bottom: 20px; /* Espaciado entre columnas */
+        padding: 0; /* Eliminar padding adicional */
     }
-    .sobreMi .contenidoSeccion {
-        display: flex;
-        flex-direction: column; /* Apilar elementos verticalmente */
-        align-items: center; /* Centrar el contenido */
+
+    .sobreMi .contenidoSeccion p {
+        font-size: 16px; /* Reducir el tamaño de la fuente para pantallas pequeñas */
+        line-height: 1.6; /* Ajustar el interlineado */
+        margin: 0 10px; /* Reducir márgenes laterales */
+        text-align: justify; /* Justificar el texto para un diseño más limpio */
+    }
+
+    /* Ajustes para los intereses */
+    .sobreMi .fila .col .contenedorIntereses .interes {
+        width: 80px; /* Reducir el ancho del recuadro */
+        height: 80px; /* Reducir el alto del recuadro */
+        margin: 0 10px 10px 0; /* Ajustar márgenes entre recuadros */
+        font-size: 12px; /* Ajustar tamaño de texto dentro del recuadro */
     }
 
     /* Ajustes para la sección skills */
@@ -585,23 +610,88 @@ footer .arriba{
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        flex-direction: column; /* Columnas apiladas verticalmente */
     }
+
     .skills .fila .col {
-        width: 100%; /* Ocupa el 100% del ancho */
+        width: 100%; /* Columnas ocupan 100% del ancho */
     }
+
     .skills .fila .col .barraSkill {
-        width: 100%;
+        width: 100%; /* Barras de habilidad ocupan todo el ancho */
     }
 
     /* Ajustes para la sección curriculum */
     .curriculum .fila {
+        display: block; /* Apilar columnas en bloques */
+    }
+
+    .curriculum .fila .col {
+        width: 90%; /* Columnas ocupan 90% del ancho */
+        margin-bottom: 20px; /* Espaciado entre columnas */
+    }
+
+    .curriculum .fila .derecha {
+        margin-left: 0; /* Resetear margen izquierdo */
+    }
+
+    /* Ajustes generales para el contenido */
+    .contenidoSeccion {
+        padding: 20px; /* Añadir espaciado alrededor del contenido */
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .sobreMi .fila {
+      display: block; /* Cambiar a bloque para apilar columnas */
+    }
+    .sobreMi .fila .col {
+      width: 100%; /* Ocupa el 100% del ancho */
+      margin-bottom: 20px; /* Espaciado entre columnas */
+    }
+    .sobreMi .contenidoSeccion {
+      display: flex;
+      flex-direction: column; /* Apilar elementos verticalmente */
+      align-items: center; /* Centrar el contenido */
+    }
+    .sobreMi .contenidoSeccion p {
+      font-size: 18px; /* Aumenta el tamaño de la fuente */
+      margin: 20px 10px; /* Ajusta el margen para que se vea mejor */
+    }
+    .sobreMi .intereses {
+      width: 40%; /* Reduce el ancho de los recuadros */
+      margin: 10px; /* Ajusta el margen para que se vean mejor */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    /* Ajustes adicionales para la sección skills */
+    .skills .fila {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .skills .fila .col {
+        width: 100%; /* Ocupa el 100% del ancho */
+    }
+
+    .skills .fila .col .barraSkill {
+        width: 100%;
+    }
+
+    /* Ajustes adicionales para la sección curriculum */
+    .curriculum .fila {
         display: block;
     }
+
     .curriculum .fila .col {
         width: 90%;
     }
+
     .curriculum .fila .derecha {
         margin-left: 20px;
     }
-}
+  }
